@@ -51,6 +51,7 @@
     if (window.WebComponents && !CustomElements.useNative) {
       // TODO(sjmiles): we need some kind of 'whenReady' or other signal
       // that will work if this function is called after the event has fired
+      // TODO(addyo): explore further when webcomponentsjs/pull/392 lands.
       if (!CustomElements.ready) {
         addEventListener('WebComponentsReady', function() {
           console._perfEnd();
