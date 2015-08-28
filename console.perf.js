@@ -30,7 +30,7 @@
 
   console._perf = function () {
     if (window.gc) {
-      for (var i=0; i<8; i++) {
+      for (var i = 0; i < 8; i++) {
         gc();
       }
     }
